@@ -16,7 +16,7 @@ def encrypt_caesar(plaintext: str, shift: int = 3) -> str:
     """
     ciphertext = ""
     LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    letters = "abcdefghigklmnopqrstuvwxyz"
+    letters = "abcdefghijklmnopqrstuvwxyz"
     s = list(plaintext)
     for i in s:
         if i in letters:
@@ -51,7 +51,7 @@ def decrypt_caesar(ciphertext: str, shift: int = 3) -> str:
     """
     plaintext = ""
     LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    letters = "abcdefghigklmnopqrstuvwxyz"
+    letters = "abcdefghijklmnopqrstuvwxyz"
     s = list(ciphertext)
     for i in s:
         if i in letters:

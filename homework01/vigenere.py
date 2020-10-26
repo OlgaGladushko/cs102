@@ -11,7 +11,7 @@ def encrypt_vigenere(plaintext: str, keyword: str) -> str:
     """
     ciphertext = ""
     LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    letters = "abcdefghigklmnopqrstuvwxyz"
+    letters = "abcdefghijklmnopqrstuvwxyz"
     s = list(plaintext)
     le = (len(plaintext) // len(keyword)) + 1 
     keyword = keyword.upper() * le
@@ -50,7 +50,7 @@ def decrypt_vigenere(ciphertext: str, keyword: str) -> str:
     """
     plaintext = ""
     LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    letters = "abcdefghigklmnopqrstuvwxyz"
+    letters = "abcdefghijklmnopqrstuvwxyz"
     s = list(ciphertext)
     le = (len(ciphertext) // len(keyword)) + 1 
     keyword = keyword.upper() * le
